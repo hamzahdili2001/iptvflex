@@ -795,5 +795,5 @@ button {
 }
 
 .plan-a {
-  color: #001f3f;
+  color: #001f3f !important;
 }
