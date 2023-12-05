@@ -127,7 +127,7 @@ body div.bg-image
 {
   width: 100%;
   height: 100vh;
-  background-image: url('../home-bg-image.jpg');
+  background-image: url('../images/home-bg-image.jpg');
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
@@ -464,7 +464,35 @@ section.home .center .btn {
 }
 /* ========== End Home ======== */
 
+section.devices {
+  background-color: #001f3f;
+}
+section.devices .container.flex {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
+section.devices .device{
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 170px;
+  background: #013569;
+    padding: 20px;
+    border-radius: 5px;
+    color: #ff4136;
+}
+
+section.devices .device h5 {
+  margin-top: 10px;
+}
 /* ========== Start Why-Us ======== */
 section#about {
   width: 100%;
@@ -492,8 +520,6 @@ section#about .container .flex .left h2 {
 
 section#about .container .flex .left h2 span{
   color: var(--btn-hover-color);
-}
-section#about .container .flex .left ul{
 }
 section#about .container .flex .left ul li{
   display: flex;
@@ -652,7 +678,112 @@ section#plans .button:hover {
 /* ========== End Planes ======== */
 footer {
   background-color: var(--white-color);
+  position: relative;
 }
-footer .left img[src="logo-black.png"] {
-  width: 300px;
+footer .left img[data="footer-logo"] {
+  width: 150px;
 }
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-y: hidden;
+  padding: 30px;
+}
+
+
+footer .container .left,
+footer .container .center,
+footer .container .right {
+  min-width: 300px;
+}
+
+footer .container .center img{
+  width: 60px;
+}
+
+footer .container .center img {
+  margin: 0px 10px;
+}
+
+footer .container h3.support-title {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 20px;
+ }
+
+ footer .container h4 {
+  margin-bottom: 10px;
+ }
+
+ @media (max-width: 1000px) {
+
+  footer .container {
+    flex-wrap: wrap;
+    display: block;
+    text-align: center;
+    min-height: 300px;
+  }
+  footer .container .center img {
+    width: 50px;
+  }
+
+  footer .left img[src="logo-black.png"] {
+    display: none;
+  }
+
+  footer .container .center {
+    padding: 30px 0;
+  }
+  footer .container .center img {
+    margin: 0px 0px;
+  }
+ }
+
+ 
+.copyright {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--text-color);
+  color: var(--white-color);
+  font-size: 18px;
+  line-height: 1.5;
+}
+.copyright p i {
+  color: #ea433b;
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+.copyright {
+  padding: 10px;
+  font-size: 16px;
+ }
+ .copyright p i {
+  font-size: 14px;
+ }
+
+ footer .container {
+  padding: 30px 10px;
+  }
+  footer .left img[data="footer-logo"] {
+    width: 100px;
+  }
+
+  footer .container .center img {
+    width: 30px;
+  }
+
+  footer .container .left, footer .container .center, footer .container .right {
+    min-width: 0;
+  }
+
+}
+
+@media (max-width: 320px)
+{
+  section#plans .column {
+    min-width: 300px;
+  }
+} 
