@@ -1,1 +1,1 @@
-## static files for a iptv selling website
+## static files for an iptv website
